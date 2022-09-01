@@ -7,13 +7,16 @@ public class GameDemo {
         int finalNumber = 0;
         try {
             //write logic
-
-            //Handle specific exception
+            finalNumber = firstNumber / secondNumber;
+     //Handle specific exception
         }catch (Exception exception){
-          return exception.toString();
+            if(firstNumber==0){
+                System.err.println("You can't divide zero with positive numbers");
+            }
+
+            return exception.toString();
         }
         return String.valueOf(finalNumber);
     }
-
 
 }
